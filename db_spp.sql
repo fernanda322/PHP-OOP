@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.1
+-- version 4.8.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 22, 2020 at 04:20 PM
--- Server version: 10.4.11-MariaDB
--- PHP Version: 7.2.28
+-- Generation Time: Jul 24, 2020 at 07:50 AM
+-- Server version: 10.1.37-MariaDB
+-- PHP Version: 7.3.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -39,7 +39,7 @@ CREATE TABLE `kelas` (
 --
 
 INSERT INTO `kelas` (`id_kelas`, `nama_kelas`, `kompetensi_keahlian`) VALUES
-(10, 'OTKP', 'Tekinik Kantor');
+(11, 'RPL', 'Rekayasa Perangkat Lunak');
 
 -- --------------------------------------------------------
 
@@ -77,8 +77,8 @@ CREATE TABLE `petugas` (
 --
 
 INSERT INTO `petugas` (`id_petugas`, `username`, `password`, `nama_petugas`, `level`) VALUES
-(1, 'riko', 'riko123', 'riko', 'admin'),
-(3, 'riko', 'riko', 'petugass', 'petugas');
+(1, 'fernanda', 'fernanda322', 'Fernanda Ramadhan', 'admin'),
+(2, 'andi', 'andi322', 'Andi', 'petugas');
 
 -- --------------------------------------------------------
 
@@ -101,7 +101,7 @@ CREATE TABLE `siswa` (
 --
 
 INSERT INTO `siswa` (`nisn`, `nis`, `nama`, `id_kelas`, `alamat`, `no_telp`, `id_spp`) VALUES
-('11125', '212', 'Riko Ardianto', 12, 'Rusun', '081321212299', 2);
+('11322', '011', 'Fernanda Ramadhan', 11, 'Cengkareng', '081318215259', 10);
 
 -- --------------------------------------------------------
 
@@ -120,7 +120,7 @@ CREATE TABLE `spp` (
 --
 
 INSERT INTO `spp` (`id_spp`, `tahun`, `nominal`) VALUES
-(5, 2022, 300000);
+(10, 2020, 500000);
 
 --
 -- Indexes for dumped tables
