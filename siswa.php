@@ -10,10 +10,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Tampilan Admin</title>
+        <title>Data Siswa</title>
     </head>
     <center>
-    <h1> ---- Tampilan Admin ---- </h1>
+    <h1> ---- Data Siswa ---- </h1>
     <body>
        
     <table border="1">

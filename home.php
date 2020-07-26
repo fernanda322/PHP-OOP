@@ -7,7 +7,7 @@ session_start();
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Welcome SPK_SPP_Riko Ardianto</title>
+        <title>Welcome SPK_SPP_Fernanda Ramadhan</title>
     </head>
     
     
@@ -16,6 +16,10 @@ session_start();
         <a href="petugas.php">petugas</a>
         <a href="spp.php">spp</a>
         <a href="kelas.php">kelas</a>
+        <?php endif?>
+
+        <?php if($_SESSION['level']=='petugas'):?>
+        <a href="spp.php">spp</a>
         <?php endif?>
     <a href="action.php?action=logout">Logout</a>
 <br>
